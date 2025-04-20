@@ -27,7 +27,7 @@ namespace TriangleTest
                         MessageBox.Show("Это разносторонний треугольник");
                 }                
             }
-            else MessageBox.Show("Только целые, положительные числа");
+            else MessageBox.Show("Ошибка!!! Вводите только целые, положительные числа.");
 
 
         }     
