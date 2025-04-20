@@ -16,18 +16,18 @@ namespace TriangleTest
                 UInt32.TryParse(textBox3.Text, out c))
             {
                 if (a + b <= c || a + c <= b || b + c <= a)
-                    MessageBox.Show("Это не треугольник");
+                    label3.Text = "Такой треугольник не существует";
                 else
                 {
                     if (a == b && b == c)
-                        MessageBox.Show("Это равносторонний треугольник");
+                        label3.Text = ("Это равносторонний треугольник");
                     else if (a == b || a == c || b == c)
-                        MessageBox.Show("Это равнобедренный треугольник");
+                        label3.Text = ("Это равнобедренный треугольник");
                     else
-                        MessageBox.Show("Это разносторонний треугольник");
+                        label3.Text = ("Это разносторонний треугольник");
                 }                
             }
-            else MessageBox.Show("Ошибка!!! Вводите только целые, положительные числа.");
+            else label3.Text = ("Ошибка!!! Вводите только целые, положительные числа.");
 
 
         }     

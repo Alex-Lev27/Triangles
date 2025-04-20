@@ -34,6 +34,7 @@
             button1 = new Button();
             label1 = new Label();
             label2 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -91,11 +92,21 @@
             label2.Size = new Size(0, 25);
             label2.TabIndex = 5;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label3.Location = new Point(227, 386);
+            label3.Name = "label3";
+            label3.Size = new Size(0, 25);
+            label3.TabIndex = 6;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(button1);
@@ -118,5 +129,6 @@
         private Button button1;
         private Label label1;
         private Label label2;
+        private Label label3;
     }
 }
